@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3</title>
+</head>
+<body>
+    <script>
+        /* Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles. */
+        let numero1 = prompt("Escreva o primerio valor: ");
+        let numero2 = prompt("Escreva o segundo valor: ");
+        let numero3 = prompt("Escreva o terceiro valor: ");
+        
+        numero1 = parseInt(numero1);
+        numero2 = parseInt(numero2);
+        numero3 = parseInt(numero3);
+
+        //Estrutura If | Else como comparação de elementos.
+        if(numero1 > numero2 && numero1 > numero3){
+            alert("Maior número: " + numero1);
+        }else if(numero2 > numero1 && numero2 > numero3){
+            alert("Maior número: " + numero2);
+        }else{
+            alert("Maior número: " + numero3);
+        }
+    </script>
+</body>
+</html>

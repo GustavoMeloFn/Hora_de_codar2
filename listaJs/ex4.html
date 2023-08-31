@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+</head>
+<body>
+    <script>
+        /* Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.*/
+        let numero1 = prompt("Escreva o primerio valor: ");
+        let numero2 = prompt("Escreva o segundo valor: ");
+        let numero3 = prompt("Escreva o terceiro valor: ");
+        
+        numero1 = parseInt(numero1);
+        numero2 = parseInt(numero2);
+        numero3 = parseInt(numero3);
+
+        //Verifica quais são os maiores números e faz uma soma entre ambos:
+        if(numero1 > numero3 && numero2 > numero3){
+            let resultado = numero1 + numero2;
+            alert("A soma dos maiores valores: " + resultado);
+
+        }else if(numero2 > numero1 && numero3 > numero1){
+            let resultado = numero2 + numero3;
+            alert("Maior número: " + resultado);
+        
+        }else{
+            let resultado = numero1 + numero3;
+            alert("Maior número: " + resultado);
+        }
+        
+    </script>
+</body>
+</html>
