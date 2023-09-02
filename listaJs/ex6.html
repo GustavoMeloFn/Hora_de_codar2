@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6</title>
+</head>
+<body>
+    <script>
+        /*Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, 
+        o último e o maior de todos eles (considere que todos os números informados serão diferentes)*/
+        let numero1 = parseInt(prompt("Escreva o primeiro número: "));
+        let numero2 = parseInt(prompt("Escreva o segundo número: "));
+        let numero3 = parseInt(prompt("Escreva o terceiro número: "));
+        let numero4 = parseInt(prompt("Escreva o quarto número: "));
+
+        document.write("<p>Primeiro número informado: </p>" + numero1);
+        document.write("<p>Último número informado: </p>" + numero4);
+
+        if(numero1 > numero2 && numero1 > numero3 && numero1 > numero4){
+            alert("O maior número é: " + numero1);
+        }else if(numero2 > numero1 && numero2 > numero3 && numero2 > numero4){
+            alert("O maior número é: " + numero2);
+        }else if(numero3 > numero1 && numero3 > numero2 && numero3 > numero4){
+            alert("O maior número é: " + numero3);
+        }else{
+            alert("O maior número é: " + numero4);
+        }
+
+    </script>
+</body>
+</html>

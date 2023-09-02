@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex7</title>
+</head>
+<body>
+    <script>
+        /* Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. 
+        Escreva o valor final da soma efetuada e também todos valores que o usuário informou. */
+        let numero1 = parseInt(prompt("Escreva o primeiro número: "));
+        let numero2 = parseInt(prompt("Escreva o segundo número: "));
+        let numero3 = parseInt(prompt("Escreva o terceiro número: "));
+        let numero4 = parseInt(prompt("Escreva o quarto número: "));
+        let numero5 = parseInt(prompt("Escreva o quinto número: "));
+        let numero6 = parseInt(prompt("Escreva o sexto número: "));
+        soma = 0;
+
+        document.write("<p>Valores informados:</p>" + numero1 + " " + numero2 + " " + numero3 + " " + numero4 + " " + numero5 + " " + numero6);
+
+        //
+        if(numero1 < 72){
+            soma = soma + numero1;
+        }if(numero2 < 72){
+            soma = soma + numero2;
+        }if(numero3 < 72){
+            soma = soma + numero3;
+        }if(numero4 < 72){
+            soma = soma + numero4;
+        }if(numero5 < 72){
+            soma = soma + numero5;
+        }if(numero6 < 72){
+            soma = soma + numero6;
+        }
+
+        alert("Valor total: " + soma);
+    </script>
+</body>
+</html>

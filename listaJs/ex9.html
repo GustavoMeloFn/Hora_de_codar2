@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex9</title>
+</head>
+<body>
+    <script>
+        /* Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá 
+        ou não votar este ano (não é necessário considerar o mês em que ela nasceu). */
+        let dataNasc = prompt("Digite o ano em que você nasceu: ");
+        dataNasc = parseInt(dataNasc);
+
+        idade = 2023 - dataNasc;
+
+        if(idade >= 16){
+            alert("Você tem idade para votar");
+        }else{
+            alert("Você não tem idade para votar");
+        }
+
+
+    </script>
+</body>
+</html>

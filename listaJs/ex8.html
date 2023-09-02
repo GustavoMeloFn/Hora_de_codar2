@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex8</title>
+</head>
+<body>
+    <script>
+        /* Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. 
+        No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de 
+        "tente novamente" */
+
+        let nota1 = parseInt(prompt("Escreva a primeira nota: "));
+        let nota2 = parseInt(prompt("Escreva a segunda nota: "));
+        let nota3 = parseInt(prompt("Escreva a terceira nota: "));
+        let nota4 = parseInt(prompt("Escreva a quarta nota: "));
+        resultado = 0;
+
+        //Condicional que irá fazer a soma.
+        if(nota1 > 0 && nota1 < 10){
+            resultado = resultado + nota1;
+        }if(nota2 > 0 && nota2 < 10){
+            resultado = resultado + nota2;
+        }if(nota3 > 0 && nota3 < 10){
+            resultado = resultado + nota3;
+        }if(nota4 > 0 && nota4 < 10){
+            resultado = resultado + nota4;
+        }
+        
+        //Vai pegar o valores informados e fazer a média(independente da condicional).
+        resultado = resultado / 4;
+        
+        //Dependendo da média, irá apresentar o resultado para o User.
+        if(resultado > 5){
+            alert("Você passou no teste :) sua nota final foi: " + resultado); 
+        }else{
+            alert("Tente novamente");
+        }
+
+    </script>
+</body>
+</html>
